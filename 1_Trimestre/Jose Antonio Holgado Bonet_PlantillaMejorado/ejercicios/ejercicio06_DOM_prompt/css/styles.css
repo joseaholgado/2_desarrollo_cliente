@@ -91,6 +91,10 @@ body {
   color: rgb(255,250,250,0.90);
   text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
 }
+/*Los botones */
+input {
+  width: 100px; 
+}
 
 #cuadrado {
   width: 100px;

@@ -18,7 +18,6 @@ body {
   overflow: hidden;
   background-color: rgb(210,105,30,0.5);
   opacity: 0.85;
-  cursor: pointer;
 }
 
 .topnav a {
@@ -48,14 +47,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: auto;
-  border: 2px solid rgb(211,211,211,0.5);
+  border: 1px solid rgb(211,211,211,0.5);
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-  border-radius: 20px;
+  border-radius: 15px;
   font-family: sans-serif;
 }
 
 .cardTitle {
-  text-align: center;
   font-size: 24px;
   padding: 10px 10px 0 10px;
   ;
@@ -63,7 +61,7 @@ body {
 
 .cardBody {
   padding: 10px;
-  flex: 1 1 100%; 
+  flex: 1 1 100%;
 }
 
 .cardFooter {
@@ -94,4 +92,16 @@ body {
   text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
 }
 
+.input-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px; /* Espacio entre los grupos de entrada */
+}
 
+.input-container p {
+  margin-right: 10px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+.input-container input {
+  flex: 1; /* Hace que el campo de entrada ocupe todo el espacio restante */
+}

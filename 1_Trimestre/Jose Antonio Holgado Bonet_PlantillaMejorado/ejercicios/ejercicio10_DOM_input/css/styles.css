@@ -18,7 +18,6 @@ body {
   overflow: hidden;
   background-color: rgb(210,105,30,0.5);
   opacity: 0.85;
-  cursor: pointer;
 }
 
 .topnav a {
@@ -47,15 +46,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: auto;
-  border: 2px solid rgb(211,211,211,0.5);
+  width: 100%;
+  border: 1px solid rgb(211,211,211,0.5);
   box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-  border-radius: 20px;
+  border-radius: 15px;
   font-family: sans-serif;
 }
 
 .cardTitle {
-  text-align: center;
   font-size: 24px;
   padding: 10px 10px 0 10px;
   ;
@@ -63,7 +61,7 @@ body {
 
 .cardBody {
   padding: 10px;
-  flex: 1 1 100%; 
+  flex: 1 1 100%;
 }
 
 .cardFooter {
@@ -94,4 +92,40 @@ body {
   text-shadow: 2px 2px 4px rgb(0,0,0,0.75);
 }
 
+#cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+/*Aqui abajo van los input*/
+
+.input-container {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+/*Aqui el input del campo vacio*/
+#nombre {
+  width: 200px; 
+  padding: 10px; 
+  font-size: 16px; 
+  border: 2px solid #ccc; 
+  border-radius: 5px; 
+}
+/* Aquí para el input con ID "guardar" */
+#guardar {
+  width: 100px;
+  background-color: #0404b49a; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+/* Cambiar estilo al pasar el cursor sobre el botón "saludar" */
+#guardar:hover {
+  background-color: #0056b3; 
+}
 

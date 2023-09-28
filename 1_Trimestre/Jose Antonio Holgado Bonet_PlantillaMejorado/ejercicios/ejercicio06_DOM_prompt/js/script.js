@@ -13,6 +13,6 @@ window.addEventListener('load', function () {
     let person = prompt("Dime tu nombre, Por ejemplo", "'Jose'");
     let salida = document.getElementById("salida");
     
-    document.getElementById("saluda").addEventListener("click", saludar);
-    document.getElementById("despide").addEventListener("click", despedir);
+    document.getElementById("saludar").addEventListener("click", saludar);
+    document.getElementById("despedir").addEventListener("click", despedir);
 });
