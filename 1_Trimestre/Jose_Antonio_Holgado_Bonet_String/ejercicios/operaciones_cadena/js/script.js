@@ -33,7 +33,7 @@ document.getElementById("botonMin_consonantes").addEventListener("click", functi
     minusculaConsonantes(texto.value);
 });
 document.getElementById("random").addEventListener("click", function(event){
-    random(texto.value);
+    iniciarRandom(texto.value);
 });
 document.getElementById("rapido").addEventListener("click", function(event){
     rapido(texto.value);

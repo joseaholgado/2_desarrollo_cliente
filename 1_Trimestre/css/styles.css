@@ -18,16 +18,20 @@ body {
   overflow: hidden;
   background-color: rgb(210, 105, 30, 0.5);
   opacity: 0.85;
+  text-align: center; /* Alinea el contenido al centro */
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: rgb(255, 250, 250, 0.90);
-  text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.75);
-  text-align: center;
+.topnav .nav {
+  display: inline-block;
+}
+
+.topnav .nav a {
+  float: none; /* Cancela la propiedad float */
+  display: inline-block; /* Hace que los elementos de enlace sean elementos en línea */
   padding: 14px 16px;
+  text-align: center;
   text-decoration: none;
+  color: white;
 }
 
 .topnav a:hover {

@@ -3,7 +3,7 @@
 //Funcion que me devuelve las consonantes en minusculas
 function minusculaConsonantes(texto){
     let resultado="";
-
+console.log(texto);
     
     for(let i=0; i<texto.length; i++){
         //Cuando detecte la consonante me la concatena a la variable resultado

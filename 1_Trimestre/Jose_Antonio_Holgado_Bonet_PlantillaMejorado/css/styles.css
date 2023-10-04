@@ -18,7 +18,6 @@ body {
   overflow: hidden;
   background-color: rgb(210,105,30,0.5);
   opacity: 0.85;
-  cursor: pointer;
 }
 
 .topnav a {
@@ -35,6 +34,7 @@ body {
   background-color: rgb(128,128,128,0.25);
   color: rgb(255,215,0,0.75);
 }
+
 
 .container {
   display: flex;

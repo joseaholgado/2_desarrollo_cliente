@@ -1,40 +1,54 @@
 "use strict"
 
+function numeroAleatorio(min,max) {
+    
+    return Math.floor(Math.random( ) * (max - min+1)) + min;
 
+}
 function random(texto) {
-    let aleatorio = Math.random( Math.floor()* 10);
-    console.log(aleatorio);
+    console.log(texto);
+    console.log(numeroAleatorio(0,9));
 
-    switch (aleatorio) {
+    switch (numeroAleatorio(0,9)) {
+
         case 0:
-            mayuscula(texto.value);
+            mayuscula(texto);
             break;
         case 1:
-            minuscula(texto.value);
+            minuscula(texto);
             break;
         case 2:
-            letraMayuscula(texto.value);
+            mayusculaLetra(texto);
             break;
         case 3:
-            ultimaMayuscula(texto.value);
+            mayusculaUltimaLetra(texto);
             break;
         case 4:
-            letraMinuscula(texto.value);
+            minusculaLetra(texto);
             break;
         case 5:
-            ultimaMinuscula(texto.value);
+            minusculaUltimaLetra(texto);
             break;
         case 6:
-            vocalesMayuscula(texto.value);
+            mayusculaVocales(texto);
             break;
         case 7:
-            vocalesMinuscula(texto.value);
+            minusculaVocales(texto);
             break;
         case 8:
-            consonanteMayuscula(texto.value);
+            mayusculaConsonantes(texto);
             break;
-        default:
-            consonanteMinuscula(texto.value);
+        case 9:
+            minusculaConsonantes(texto);
             break;
     }
+
+    
 }
+
+// Función para ejecutar "random()" cada 2 segundos
+function iniciarRandom() {
+   let intervalo = setInterval(function () {
+      random(texto.value);
+    }, 2000); // 2000 milisegundos = 2 segundos
+  }
