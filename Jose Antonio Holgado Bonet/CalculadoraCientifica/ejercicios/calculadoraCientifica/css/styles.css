@@ -1,0 +1,254 @@
+body {
+  background: url(../img/bgblanco.png) repeat;
+  text-align: justify;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  /* Elimina el margen predeterminado del cuerpo */
+  padding: 0;
+  /* Elimina el espacio interno predeterminado del cuerpo */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centra los elementos horizontalmente */
+  padding: 20px;
+  max-width: 1200px;
+  /* Ajusta el ancho máximo según tu preferencia */
+  margin: 0 auto;
+  /* Centra el contenedor horizontalmente */
+}
+
+.header {
+  background: url(../img/bgblue2.png) repeat;
+  opacity: 0.5;
+  text-align: center;
+  padding: 5px;
+  color: rgb(255, 250, 250, 0.90);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.75);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(210, 105, 30, 0.5);
+  opacity: 0.85;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 250, 250, 0.90);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.75);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: rgb(128, 128, 128, 0.25);
+  color: rgb(255, 215, 0, 0.75);
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid rgb(211, 211, 211, 0.5);
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+.cardTitle {
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+  ;
+}
+
+.cardBody {
+  padding: 10px;
+  flex: 1 1 100%;
+}
+
+.cardFooter {
+  background: rgb(50, 205, 50, 0.25);
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cardFooter a {
+  text-decoration: none;
+  color: rgb(0, 0, 255, 0.80);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.footer {
+  background: url(../img/bgblue2.png) repeat;
+  opacity: 0.5;
+  text-align: center;
+  padding: 20px;
+  color: rgb(255, 250, 250, 0.90);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.75);
+}
+
+
+/* Estilos para el campo de entrada (textarea) */
+textarea {
+  padding: 20px;
+  border: 4px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  /* Cambia el tamaño de la fuente a 16px o el valor que desees */
+  width: 50%;
+  margin-bottom: 10px;
+  margin-left: 22%;
+}
+
+
+/* Estilos para los campos de entrada (input) */
+input[type="text"] {
+  padding: 20px;
+  border: 4px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 50%;
+  margin-bottom: 10px;
+
+}
+
+/* Estilos para los botones */
+input[type="button"] {
+  padding: 5px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+
+
+}
+
+input[type="button"]:hover {
+  background-color: #7b0202;
+  /* Cambia el color de fondo al hacer hover */
+}
+
+/* Estilos para el label */
+label {
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  margin: auto;
+  /* Centra el label verticalmente */
+  display: block;
+  /* Hace que el label sea un bloque para que se pueda aplicar el margin-auto correctamente */
+}
+
+select {
+  padding: 10px;
+  /* Aumenta el relleno para hacerlo más grande */
+  width: 20%;
+  /* Ancho del 80% del contenedor */
+  margin: 0 auto;
+  margin-bottom: 9px;
+  display: block;
+  /* Hace que el select sea un bloque para que se pueda aplicar el margin-auto correctamente */
+}
+
+/* Estilos para la calculadora científica */
+.calculadora,
+.calculadora-cienfifica {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #141212;
+
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+  background-color: #141212;
+
+}
+
+.display {
+  height: 100px;
+  background-color: #344055;
+
+  text-align: end;
+}
+
+.valor-superior {
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.valor-inferior {
+  color: white;
+  font-size: 2rem;
+}
+
+.calculadora-botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+button {
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: greenyellow;
+}
+
+button:active {
+  background-color: #7cff02a8;
+}
+
+.borrar {
+  background-color: #ec0f0f;
+  color: white;
+}
+
+
+.operador {
+  background-color: grey;
+  color: white;
+}
+
+.decimal {
+  background-color: white;
+}
+
+#igual {
+  background-color: #31a4bd;
+}
+
+#igual:active {
+  background-color: #7cff02a8;
+}
+
+.hidden {
+  display: none;
+}

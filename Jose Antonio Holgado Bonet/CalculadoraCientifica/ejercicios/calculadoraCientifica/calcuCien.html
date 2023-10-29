@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Científica</title>
+  <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+
+  <!--Aquí están todos los script-->
+  <script defer type="text/javascript" src="js/cientifica/despliegue.js"></script>
+  <script defer type="text/javascript" src="js/script.js"> </script>
+  <script defer type="text/javascript" src="js/operacionesBásicas/suma.js"> </script>
+  <script defer type="text/javascript" src="js/eleccionBoton.js"></script>
+  <script defer type="text/javascript" src="js/operacionesBásicas/operacionesBasicos.js"></script>
+  <script defer type="text/javascript" src="js/borrados/casosBorrados.js"></script>
+  <script defer type="text/javascript" src="js/otrosCasos/otrosCasos.js"></script>
+  <script defer type="text/javascript" src="js/operacionesBásicas/suma.js"></script>
+  <script defer type="text/javascript" src="js/operacionesBásicas/resta.js"></script>
+  <script defer type="text/javascript" src="js/operacionesBásicas/multiplicar.js"></script>
+  <script defer type="text/javascript" src="js/operacionesBásicas/dividir.js"></script>
+  <script defer type="text/javascript" src="js/borrados/borrar.js"></script>
+  <script defer type="text/javascript" src="js/borrados/borrarTodo.js"></script>
+  <script defer type="text/javascript" src="js/borrados/borrarMemoria.js"></script>
+  <script defer type="text/javascript" src="js/borrados/borrarOperando.js"></script>
+  <script defer type="text/javascript" src="js/otrosCasos/inversa.js"></script>
+  <script defer type="text/javascript" src="js/otrosCasos/raizCuadrada.js"></script>
+  <script defer type="text/javascript" src="js/otrosCasos/cambiarSigno.js"></script>
+  <script defer type="text/javascript" src="js/otrosCasos/porcentaje.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/operacioneCientifica.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/seno.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/coseno.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/tangente.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/logaritmo.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/logaritmoNatural.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/exponente.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/e.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/pi.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/factorial.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/modulo.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/random.js"></script>
+  <script defer type="text/javascript" src="js/cientifica/exponenteVariable.js"></script>
+  <script defer type="text/javascript" src="js/operacionesBásicas/porcentaje.js"></script>
+  
+</head>
+
+<body>
+  <!-- --------HEADER---------- -->
+  <div class="header">
+    <h3>
+      Ejemplos - FUNDAMENTOS DE JS (ES6)
+    </h3>
+    <h4>Desarrollo WEB en entorno cliente</h4>
+  </div>
+  <!-- ---------MENU----------- -->
+  <div class="topnav">
+    <a href="https://www.w3schools.com/js/default.asp">w3schools</a>
+    <a href="https://es.javascript.info/js">javascript.info</a>
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN</a>
+  </div>
+  <br />
+  <!-- ------MAIN-CONTENT------ -->
+  <div class="container">
+    <div class="card">
+      <div class="cardTitle">Operaciones con cadena</div>
+      <div class="cardBody">
+        <fieldset>
+          <!--Menu desplegable-->
+          <label for="tipo-calculadora"><h2>Elige una calculadora:</h2></label>
+          <select name="tipo-calculadora" id="tipo-calculculadora">
+            <option value="basica">Básica</option>
+            <option value="cientifica">Científica</option>
+          </select>
+
+          <!--Calculadora básica-->
+          <div class="calculadora">
+            <div class="display">
+              <div data-valor-superior class="valor-superior"></div>
+              <div data-valor-inferior class="valor-inferior"></div>
+            </div>
+            <div class="calculadora-botones">
+              <!--Primera fila-->
+              <button data-borrar-memoria class="boton borrar">M</button>
+              <button data-atras class="boton borrar">_</button>
+              <button data-borrar class="boton borrar">C</button>
+              <button data-borrar-todo class="boton borrar">CE</button>
+              <!--Segunda fila-->
+              <button data-numero class="boton numero">7</button>
+              <button data-numero class="boton numero">8</button>
+              <button data-numero class="boton numero">9</button>
+              <button data-operador class="boton operador">/</button>
+              <!--data-action: es un atributo para almacenar datos-->
+              <!--Tercera fila-->
+              <button data-numero class="boton numero">4</button>
+              <button data-numero class="boton numero">5</button>
+              <button data-numero class="boton numero">6</button>
+              <button data-operador class="boton operador">*</button>
+              <!--Cuarta fila-->
+              <button data-numero class="boton numero">1</button>
+              <button data-numero class="boton numero">2</button>
+              <button data-numero class="boton numero">3</button>
+              <button data-operador class="boton operador">-</button>
+              <!--Quinta fila-->
+              <button data-cambio-operador class="boton operador">+/-</button>
+              <button data-numero class="boton numero">0</button>
+              <button data-numero class="boton decimal">.</button>
+              <button data-operador class="boton operador">+</button>
+              <!--Sexta fila-->
+              <button data-operador class="boton operador">1/x</button>
+              <button data-operador class="boton operador">√</button>
+              <button data-operador class="boton operador">%</button>
+              <button data-igual id="igual" class="boton operador">=</button>
+
+              <!--Cientifica-->
+              <button data-operador class="boton operador hidden">sen</button>
+              <button data-operador class="boton operador hidden">cos</button>
+              <button data-operador class="boton operador hidden">tan</button>
+              <button data-operador class="boton operador hidden">log</button>
+              <button data-operador class="boton operador hidden">ln</button>
+              <button data-operador class="boton operador hidden">e</button>
+              <button data-operador class="boton operador hidden">π</button>
+              <button data-operador class="boton operador hidden">!</button>
+              <button data-operador class="boton operador hidden">mod</button>
+              <button data-operador class="boton operador hidden">Rnd</button>
+              <button data-operador class="boton operador hidden">a^2</button>
+              <button data-operador class="boton operador hidden">a^b</button>
+            </div>
+              
+          
+        </div>
+
+          </div>
+
+
+          </div>
+
+        </fieldset>
+
+
+      </div>
+      <div class="cardFooter"><a href="../../calculadoraCientifica.html">&gt;&gt; Página principal</a></div>
+    </div>
+
+  </div>
+  </div>
+  <br />
+  <!-- ---------FOOT----------- -->
+  <div class="footer">
+    © Jose Antonio Holgado Bonet ☺
+  </div>
+</body>
+
+</html>

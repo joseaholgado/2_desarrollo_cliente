@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+  <link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+
+  <!--Aquí están todos los script-->
+  <script defer type="text/javascript" src="js/cargarApi.js"> </script>
+  <script defer type="text/javascript" src="js/script.js"></script>
+  <script defer type="text/javascript" src="js/eleccionBoton.js"></script>
+  <script defer type="text/javascript" src="js/funciones/contarApariciones.js"></script>
+  <script defer type="text/javascript" src="js/funciones/contarPalabras.js"></script>
+  <script defer type="text/javascript" src="js/funciones/invertir.js"></script>
+  <script defer type="text/javascript" src="js/funciones/palindromo.js"></script>
+
+</head>
+
+<body>
+  <!-- --------HEADER---------- -->
+  <div class="header">
+    <h3>
+      Ejemplos - FUNDAMENTOS DE JS (ES6)
+    </h3>
+    <h4>Desarrollo WEB en entorno cliente</h4>
+  </div>
+  <!-- ---------MENU----------- -->
+  <div class="topnav">
+    <a href="https://www.w3schools.com/js/default.asp">w3schools</a>
+    <a href="https://es.javascript.info/js">javascript.info</a>
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN</a>
+  </div>
+  <br />
+  <!-- ------MAIN-CONTENT------ -->
+  <div class="container">
+    <div class="card">
+      <div class="cardTitle">Operaciones con cadena</div>
+      <div class="cardBody">
+        <fieldset>
+          <legend>Introduce un texto a tu antojo</legend>
+          <br>
+          <!--Caja de texto-->
+          <div class="input-container">
+              <input id="cargarApi" type="button" value="Cargar API"></input>
+            <textarea id="texto" type="text" placeholder="Aquí carga la API o escribes lo que quieras..."></textarea>
+          </div>
+          <div class="input-container2">           
+            <textarea id="texto2" type="text" placeholder="Aquí escribes lo que quieres buscar..."></textarea>
+          </div>
+          <br>
+          <br>
+          <div id="texto">
+            <p id="salida">...</p>
+          </div>
+          <br>
+          <!-- ------Botones------ -->
+          <div class="contenedorBotones">
+          <input class="boton" id="contarApariciones" type="button" value="Contar apariciones"></input>
+          <input class="boton" id="contarPalabras" type="button" value="Contar palabras"></input>
+          <input class="boton" id="invertir" type="button" value="Invertir texto"></input>
+          <input class="boton" id="palindromo" type="button" value="Palíndromo"></input>
+        </div>
+        </fieldset>
+
+
+        <!-- ------Resultado------ -->
+
+      </div>
+      <div class="cardFooter"><a href="../../string.html">&gt;&gt; Página principal</a></div>
+    </div>
+
+  </div>
+  </div>
+  <br />
+  <!-- ---------FOOT----------- -->
+  <div class="footer">
+    © Jose Antonio Holgado Bonet ☺
+  </div>
+</body>
+
+</html>

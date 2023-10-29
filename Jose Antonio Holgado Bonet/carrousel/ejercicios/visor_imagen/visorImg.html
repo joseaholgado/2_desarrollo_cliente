@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+  <link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="./css/estilos.css" rel="stylesheet" type="text/css" />
+  
+  <!--Aquí están todos los script-->
+  <script defer type="text/javascript" src="js/script.js"> </script>
+  
+  
+  
+  <!--Script js de random, parar, rapido y lento-->
+  <script defer type="text/javascript" src="js/random.js"></script>
+
+</head>
+
+<body>
+  <!-- --------HEADER---------- -->
+  <div class="header">
+    <h3>
+      Ejemplos - FUNDAMENTOS DE JS (ES6)
+    </h3>
+    <h4>Desarrollo WEB en entorno cliente</h4>
+  </div>
+  <!-- ---------MENU----------- -->
+  <div class="topnav">
+    <a href="https://www.w3schools.com/js/default.asp">w3schools</a>
+    <a href="https://es.javascript.info/js">javascript.info</a>
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN</a>
+  </div>
+  <br />
+  <!-- ------MAIN-CONTENT------ -->
+  <div class="container">
+    <div class="card">
+      <div class="cardTitle">Visor de imágenes</div>
+      <div class="cardBody">
+        <fieldset>
+          <legend>Pulsa alguna Imágen</legend>
+           <br>
+          <!--Caja de texto-->
+          <div class="input-container">
+            <div class="contenedor-imagenes">
+              <div class="miniaturas">
+                  <div class="miniatura" onclick="mostrarImagen('mano.jpg')"><img src="img/mono.jpg" alt="Imagen 1"></div>
+                  <div class="miniatura" onclick="mostrarImagen(2)"><img src="img/caballo.jpg" alt="Imagen 2"></div>
+                  <div class="miniatura" onclick="mostrarImagen(3)"><img src="img/camaleon.jpg" alt="Imagen 3"></div>
+                  <div class="miniatura" onclick="mostrarImagen(4)"><img src="img/tigre.jpg" alt="Imagen 4"></div>
+      
+      
+              </div>
+              <div class="miniaturas2">
+                  <div class="miniatura2" onclick="mostrarImagen(5)"><img src="img/perro.jpg" alt="Imagen 5"></div>
+                  <div class="miniatura2" onclick="mostrarImagen(6)"><img src="img/panda.jpg" alt="Imagen 6"></div>
+                  <div class="miniatura2" onclick="mostrarImagen(7)"><img src="img/delfines.jpg" alt="Imagen 7"></div>
+                  <div class="miniatura2" onclick="mostrarImagen(8)"><img src="img/buho.jpg" alt="Imagen 8"></div>
+              </div>
+              <div class="imagen-ampliada">
+                <img id="imagen-ampliada" src="" alt="Imagen Ampliada">
+                
+            </div>
+          </div>
+          
+        </fieldset>
+
+
+        <!-- ------Resultado------ -->
+
+      </div>
+      <div class="cardFooter"><a href="../../carrousel.html">&gt;&gt; Página principal</a></div>
+    </div>
+
+  </div>
+  </div>
+  <br />
+  <!-- ---------FOOT----------- -->
+  <div class="footer">
+    © Jose Antonio Holgado Bonet ☺
+  </div>
+</body>
+
+</html>

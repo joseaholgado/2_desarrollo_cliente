@@ -1,0 +1,25 @@
+
+
+.contenedor-imagenes{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+   
+}
+.miniatura, .miniatura2{
+    cursor: pointer;
+}
+
+
+img{
+    width: 40%;
+    height: 40%;
+}
+.imagen-ampliada{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 30%;
+    height: 75%;
+    width: 65%;
+}
+
